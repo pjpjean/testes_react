@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Container, Dropdown, DropdownMenu, DropdownToggle,
-  DropdownItem, UncontrolledDropdown
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownToggle,
+  DropdownItem
 } from 'reactstrap';
 
 const propTypes = {

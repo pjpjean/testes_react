@@ -6,12 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from 'reactstrap';
+import DropdownSelect from 'components/DropdownSelect';
 import './App.css';
 
 class App extends Component {
@@ -50,17 +47,7 @@ class App extends Component {
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                  </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <DropdownSelect itens={['Indicadores', '-', 'Pessoa Física', 'Pessoa Jurídica']} />
             </Nav>
           </Collapse>
         </Navbar>

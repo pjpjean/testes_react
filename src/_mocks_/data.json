@@ -1,0 +1,32 @@
+{
+    "buscas": [
+        {
+            "id": 0,
+            "nome": "Indicador",
+            "frase": "Nome ou parte do nome do indicador",
+            "dica": "Procura indicadores pelo nome.",
+            "url": "busca?tipo=indicador&q="
+        },
+        {
+            "id": 1,
+            "nome": "Pessoa jurídica",
+            "frase": "CNPJ da pessoa jurídica",
+            "dica": "Procura indicadores da pessoa jurídica pelo CNPJ. Pode conter pontos, barras e traços.",
+            "url": "busca?tipo=pj&q="
+        },
+        {
+            "id": 2,
+            "nome": "Pessoa física",
+            "frase": "CPF da pessoa física",
+            "dica": "Procura indicadores da pessoa física pelo CPF. Pode conter pontos e traços.",
+            "url": "busca?tipo=pf&q="
+        },
+        {
+            "id": 3,
+            "nome": "Unidade administrativa",
+            "frase": "Código da UA (7 posições)",
+            "dica": "Procurar indicadores da unidade administrativa pelo código. Pode conter pontos.",
+            "url": "busca?tipo=ua&q="
+        }
+    ]
+}
