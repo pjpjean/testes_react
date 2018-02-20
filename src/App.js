@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -9,11 +10,7 @@ import {
   NavLink,
   InputGroup,
   InputGroupAddon,
-  Input,
-  InputGroupButtonDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  Input
 } from 'reactstrap';
 import DropdownSelect from 'components/DropdownSelect';
 import './App.css';
@@ -51,23 +48,7 @@ class App extends Component {
           <Collapse isOpen={this.state.isNavbarOpen} navbar>
             <Nav className="ml-auto" navbar>
               <InputGroup>
-                <InputGroupButtonDropdown>
-                <DropdownToggle nav caret>
-                  Options
-                  </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    Option 1
-                    </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                    </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                    </DropdownItem>
-                </DropdownMenu>
-                </InputGroupButtonDropdown>
+                <DropdownSelect addonType="prepend" color="secondary" itens={itensBusca} />
                 <Input placeholder="username" />
                 <InputGroupAddon addonType="append">@</InputGroupAddon>
               </InputGroup>              
@@ -78,8 +59,9 @@ class App extends Component {
                 <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
               </NavItem>
               <InputGroup>
-                <DropdownSelect nav itens={itensBusca} />
+                <DropdownSelect color="secondary" itens={itensBusca} />
                 <Input placeholder="username" />
+                <Button addonType="append">@</Button>
               </InputGroup>              
             </Nav>
           </Collapse>

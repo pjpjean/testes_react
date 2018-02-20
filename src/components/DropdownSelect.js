@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   UncontrolledDropdown,
-  UncontrolledNavDropdown,
   DropdownMenu,
   DropdownToggle,
   DropdownItem
@@ -59,8 +58,8 @@ class DropdownSelect extends React.Component {
     );
 
     return (
-      <UncontrolledDropdown>
-        <DropdownToggle nav caret>
+      <UncontrolledDropdown className="input-group-btn">
+        <DropdownToggle {...props} caret>
           {this.state.value}
         </DropdownToggle>
         <DropdownMenu>
