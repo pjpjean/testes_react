@@ -58,7 +58,7 @@ class DropdownSelect extends React.Component {
     );
 
     return (
-      <UncontrolledDropdown className="input-group-btn">
+      <UncontrolledDropdown>
         <DropdownToggle {...props} caret>
           {this.state.value}
         </DropdownToggle>
